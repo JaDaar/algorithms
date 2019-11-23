@@ -7,8 +7,8 @@ namespace Sort
         static void Main(string[] args)
         {
             int[] x = { 7,6,5,1 };
-            var b=InsertionSort(x);
-            Console.WriteLine(b);
+            var baseList=InsertionSort(x);
+            Console.WriteLine(baseList);
         }
 
         private static int[] InsertionSort(int[] list)
