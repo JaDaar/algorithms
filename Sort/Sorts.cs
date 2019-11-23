@@ -2,13 +2,15 @@
 
 namespace Sort
 {
-    class Program
+    class Sorts
     {
         static void Main(string[] args)
         {
-            int[] x = { 7,6,5,1 };
-            var baseList=InsertionSort(x);
-            Console.WriteLine(baseList);
+            int[] inputList = { 7,6,5,1 };
+            System.Console.WriteLine($"Input Values {inputList[0]},{inputList[1]},{inputList[2]},{inputList[3]}");
+            var baseList=InsertionSort(inputList);
+            System.Console.WriteLine($"Sort Values  {baseList[0]},{baseList[1]},{baseList[2]},{baseList[3]}");
+            Console.ReadLine();
         }
 
         private static int[] InsertionSort(int[] list)
